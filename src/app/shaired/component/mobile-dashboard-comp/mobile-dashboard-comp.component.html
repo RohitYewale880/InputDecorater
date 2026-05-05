@@ -1,0 +1,11 @@
+<h1 class="text-center pt-5 text-primary">MOBILE TASK</h1>
+<div class="container pt-5">
+    <div class="row" *ngIf="mobileArr.length > 0; else nomobiledata">
+        <div class="col-md-12" *ngFor="let mob of mobileArr; trackBy : trackByfun">
+            <app-mobile-comp [mobobj] = "mob"></app-mobile-comp>
+        </div>
+    </div>
+    <ng-template #nomobiledata>
+        <div class="alert alert-info">No Mobile data is added yet!!!</div>
+    </ng-template>
+</div>

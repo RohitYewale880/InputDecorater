@@ -1,0 +1,42 @@
+@mixin position_center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .noimg {
+        width: 100%;
+        height: 100%;
+        background-color: #ededed;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include position_center();
+    }
+}
+
+.isprdAvailable {
+    filter: blur(1px) grayscale(1);
+}
+
+.isNotAvailable {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include position_center();
+    font-weight: 900;
+}

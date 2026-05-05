@@ -9,12 +9,16 @@ import { PostCompComponent } from './shaired/component/post-comp/post-comp.compo
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MobileDashboardCompComponent } from './shaired/component/mobile-dashboard-comp/mobile-dashboard-comp.component';
+import { MobileCompComponent } from './shaired/component/mobile-comp/mobile-comp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostDashboardCompComponent,
-    PostCompComponent
+    PostCompComponent,
+    MobileDashboardCompComponent,
+    MobileCompComponent
   ],
   imports: [
     BrowserModule,
