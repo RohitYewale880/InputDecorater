@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MobileDashboardCompComponent } from './shaired/component/mobile-dashboard-comp/mobile-dashboard-comp.component';
 import { MobileCompComponent } from './shaired/component/mobile-comp/mobile-comp.component';
+import { MovieDashboardCompComponent } from './shaired/component/movie-dashboard-comp/movie-dashboard-comp.component';
+import { MovieCompComponent } from './shaired/component/movie-comp/movie-comp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MobileCompComponent } from './shaired/component/mobile-comp/mobile-comp
     PostDashboardCompComponent,
     PostCompComponent,
     MobileDashboardCompComponent,
-    MobileCompComponent
+    MobileCompComponent,
+    MovieDashboardCompComponent,
+    MovieCompComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<h1 class="text-center pt-5 text-primary">MOVIE TASK</h1>
+<div class="container">
+    <div class="row" *ngIf="movieArr.length > 0; else nomoviedata">
+        <div class="col-md-4" *ngFor="let movie of movieArr; trackBy : trackByfun">
+            <app-movie-comp [movieObj]="movie"></app-movie-comp>
+        </div>
+    </div>
+    <ng-template #nomoviedata>
+        <div class="alert alert-info">No Movie data is added yet!!!</div>
+    </ng-template>
+</div>
